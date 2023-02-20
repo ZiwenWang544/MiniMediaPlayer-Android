@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="22dp"
+        android:longClickable="true"
+        android:onClick="pausar"
+        android:src="@drawable/pause">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:longClickable="true"
+        android:onClick="iniciar"
+        android:src="@drawable/play">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:longClickable="true"
+        android:onClick="detener"
+        android:src="@drawable/stop" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_alignRight="@+id/imageButton4"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="20dp"
+        android:linksClickable="false"
+        android:longClickable="true"
+        android:onClick="circular"
+        android:text="No reproducir en forma circular">
+    </Button>
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:longClickable="true"
+        android:onClick="continuar"
+        android:src="@drawable/log"/>
+
+</RelativeLayout>
